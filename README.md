@@ -7,8 +7,9 @@ Software Engineering project.
 
 UCS503P
 
-## Project Structure
+## 📁 Project Structure
 
+```text
 Food-Management-Platform/
 │
 ├── index.html
@@ -41,6 +42,7 @@ Food-Management-Platform/
 │
 ├── README.md
 └── .gitignore
+```
 
 ## Student
 
