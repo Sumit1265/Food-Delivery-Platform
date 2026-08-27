@@ -44,6 +44,32 @@ Food-Management-Platform/
 └── .gitignore
 ```
 
+## Authentication & Security
+
+The planned platform will provide secure access for users and administrators.
+
+Security features include:
+
+User registration
+Secure login
+Password authentication
+Role-based access
+Admin-only management features
+Input validation
+Protected application features
+
+## Analytics
+
+The platform can display analytics for:
+
+Daily sales
+Weekly sales
+Monthly sales
+Food popularity
+Order status
+Revenue
+Customer activity
+
 ## Student
 
 Sumit Keshri
