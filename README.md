@@ -7,6 +7,41 @@ Software Engineering project.
 
 UCS503P
 
+## Project Structure
+
+Food-Management-Platform/
+│
+├── index.html
+├── menu.html
+├── cart.html
+├── checkout.html
+├── orders.html
+├── login.html
+├── register.html
+├── about.html
+├── contact.html
+│
+├── css/
+│   ├── style.css
+│   ├── responsive.css
+│   └── admin.css
+│
+├── js/
+│   ├── script.js
+│   ├── cart.js
+│   ├── login.js
+│   ├── orders.js
+│   └── admin.js
+│
+├── images/
+│   ├── pizza.jpg
+│   ├── burger.jpg
+│   ├── biryani.jpg
+│   └── ...
+│
+├── README.md
+└── .gitignore
+
 ## Student
 
 Sumit Keshri
