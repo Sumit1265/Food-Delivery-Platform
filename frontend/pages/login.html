@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | FoodieHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <style>
+        /* Login page specific styling */
+
+        .login-section {
+            min-height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+        }
+
+        .login-card {
+            width: 100%;
+            max-width: 420px;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .login-icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .login-header h1 {
+            margin: 0 0 8px;
+        }
+
+        .login-header p {
+            margin: 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #ff6b35;
+        }
+
+        .login-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        .login-options a {
+            color: #ff6b35;
+            text-decoration: none;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #ff6b35;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background: #e85b28;
+        }
+
+        #loginMessage {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .register-link a {
+            color: #ff6b35;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="../index.html" class="brand">
+                🍴 FoodieHub
+            </a>
+
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="cart.html">Cart</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html" class="active">Login</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <section class="login-section">
+
+            <div class="login-card">
+
+                <div class="login-header">
+
+                    <div class="login-icon">
+                        🍴
+                    </div>
+
+                    <h1>Welcome Back!</h1>
+
+                    <p>
+                        Login to your FoodieHub account
+                    </p>
+
+                </div>
+
+
+                <form id="loginForm">
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="login-options">
+
+                        <label>
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+
+                        <a href="#">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <button type="submit" class="login-btn">
+                        Login
+                    </button>
+
+                    <p id="loginMessage"></p>
+
+                </form>
+
+
+                <div class="register-link">
+
+                    <p>
+                        Don't have an account?
+                        <a href="register.html">
+                            Create Account
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <a href="../index.html" class="brand">
+                    🍴 FoodieHub
+                </a>
+
+                <p>
+                    Smart food ordering and management
+                    platform developed as a college project.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Quick Links</h4>
+
+                <a href="../index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="cart.html">Cart</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Account</h4>
+
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="profile.html">Profile</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Project</h4>
+
+                <p>Food Management Platform</p>
+                <p>HTML • CSS • JavaScript</p>
+                <p>© 2026 FoodieHub</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 FoodieHub. All Rights Reserved.
+            </p>
+
+            <p>
+                Developed by <strong>Sumit Keshri</strong>
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
