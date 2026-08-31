@@ -1,21 +1,20 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
+document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.getElementById("loginForm");
+    if (loginForm) {
+        loginForm.addEventListener("submit", function (event) {
+            event.preventDefault();
 
-    event.preventDefault();
+            const email = document.getElementById("loginEmail").value.trim();
+            const password = document.getElementById("loginPassword").value;
+            const message = document.getElementById("loginMessage");
 
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
-    let message = document.getElementById("message");
-
-    // Demo login credentials
-    if (email === "admin@gmail.com" && password === "12345") {
-        message.style.color = "green";
-        message.textContent = "Login successful!";
-
-        // Redirect to dashboard
-        // window.location.href = "dashboard.html";
-    } 
-    else {
-        message.style.color = "red";
-        message.textContent = "Invalid email or password!";
+            if (email === "admin@gmail.com" && password === "12345") {
+                message.style.color = "green";
+                message.textContent = "Login successful!";
+            } else {
+                message.style.color = "red";
+                message.textContent = "Invalid email or password!";
+            }
+        });
     }
 });

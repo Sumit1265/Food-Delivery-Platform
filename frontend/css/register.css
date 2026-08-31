@@ -1,0 +1,331 @@
+/* =========================================
+   FOODIEHUB REGISTER PAGE
+========================================= */
+
+/* Register page background */
+body.register-page {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   REGISTER MAIN
+========================================= */
+
+body.register-page main {
+    width: 100%;
+    display: block;
+}
+
+
+/* =========================================
+   REGISTER SECTION
+========================================= */
+
+body.register-page .register-section {
+    width: 100%;
+    min-height: 75vh;
+
+    padding: 60px 20px;
+
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   REGISTER CARD
+========================================= */
+
+body.register-page .register-card {
+    width: 100%;
+    max-width: 480px;
+
+    background: #ffffff;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.20);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+body.register-page .register-header {
+    text-align: center;
+
+    margin-bottom: 28px;
+}
+
+body.register-page .register-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff0e9;
+
+    border-radius: 50%;
+
+    font-size: 30px;
+}
+
+body.register-page .register-header h1 {
+    margin: 0 0 8px;
+
+    color: #222;
+
+    font-size: 30px;
+}
+
+body.register-page .register-header p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+body.register-page #registerForm {
+    width: 100%;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+body.register-page .register-card .form-group {
+    width: 100%;
+
+    margin-bottom: 18px;
+}
+
+body.register-page .register-card .form-group label {
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 8px;
+
+    color: #333;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+body.register-page .register-card .form-group input {
+    display: block;
+
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #222;
+
+    font-size: 15px;
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+body.register-page .register-card .form-group input:focus {
+    border-color: #ff6333;
+
+    box-shadow: 0 0 0 3px rgba(255, 99, 51, 0.12);
+}
+
+
+/* =========================================
+   TERMS
+========================================= */
+
+body.register-page .terms {
+    width: 100%;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    margin: 20px 0;
+
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+body.register-page .terms input {
+    width: 16px;
+    height: 16px;
+
+    margin-top: 2px;
+
+    flex-shrink: 0;
+}
+
+body.register-page .terms label {
+    color: #666;
+
+    font-size: 13px;
+
+    font-weight: normal;
+}
+
+body.register-page .terms a {
+    color: #ff6333;
+
+    text-decoration: none;
+}
+
+body.register-page .terms a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   REGISTER BUTTON
+========================================= */
+
+body.register-page .register-btn {
+    display: block;
+
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #ff6333;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+body.register-page .register-btn:hover {
+    background: #e95327;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+body.register-page #registerMessage {
+    width: 100%;
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   LOGIN LINK
+========================================= */
+
+body.register-page .login-link {
+    margin-top: 25px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #eeeeee;
+
+    text-align: center;
+}
+
+body.register-page .login-link p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+body.register-page .login-link a {
+    color: #ff6333;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+body.register-page .login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    body.register-page .register-section {
+        padding: 35px 15px;
+    }
+
+    body.register-page .register-card {
+        max-width: 100%;
+
+        padding: 30px 22px;
+
+        border-radius: 14px;
+    }
+
+    body.register-page .register-header h1 {
+        font-size: 26px;
+    }
+
+}
