@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | FoodieHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/api.js" defer></script>
+    <script src="js/checkout.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">FoodieHub</a>
+            <nav class="nav-links">
+                <a href="menu.html">Menu</a>
+                <a href="cart.html">Cart</a>
+                <a href="orders.html">My Orders</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section container">
+        <div class="section-heading">
+            <h1>Checkout</h1>
+            <p>Enter your delivery details to place your order.</p>
+        </div>
+
+        <div class="checkout-layout">
+            <form id="checkoutForm" class="form-card"
+                  style="margin:0">
+                <div class="form-group">
+                    <label for="address">Delivery address</label>
+                    <textarea id="address" rows="4" minlength="5"
+                        maxlength="500" required
+                        placeholder="House number, street, city, PIN code"></textarea>
+                </div>
+
+                <button class="btn full-width" type="submit" id="placeOrderBtn">
+                    Place Order
+                </button>
+
+                <p id="checkoutMessage" class="message" role="status"></p>
+            </form>
+
+            <aside class="summary-card">
+                <h2>Order information</h2>
+                <p class="muted" style="margin-top:10px">
+                    Your final subtotal, delivery fee, and tax will be
+                    calculated by the backend when you place the order.
+                </p>
+                <a class="btn btn-secondary full-width"
+                   href="cart.html" style="margin-top:20px">
+                    Back to Cart
+                </a>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">© 2026 FoodieHub</footer>
+</body>
+</html>

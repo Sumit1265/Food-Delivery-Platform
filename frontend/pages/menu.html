@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | FoodieHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/api.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">FoodieHub</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="cart.html">Cart</a>
+                <a href="orders.html">My Orders</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section container">
+        <div class="section-heading">
+            <h1>Explore Our Menu</h1>
+            <p>Find your next favourite meal.</p>
+        </div>
+
+        <div class="toolbar">
+            <input
+                class="search-input"
+                type="search"
+                id="foodSearch"
+                placeholder="Search pizza, burger, momos..."
+            >
+
+            <select id="foodCategory" class="search-input">
+                <option value="">All categories</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Burger">Burger</option>
+                <option value="Momos">Momos</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Drinks">Drinks</option>
+            </select>
+
+            <button id="searchBtn" class="btn">Search</button>
+        </div>
+
+        <p id="menuMessage" class="message" role="status"></p>
+
+        <div id="foodList" class="food-grid">
+            <p>Loading menu...</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 FoodieHub</p>
+    </footer>
+</body>
+</html>

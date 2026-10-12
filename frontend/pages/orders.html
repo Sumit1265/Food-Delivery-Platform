@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders | FoodieHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/api.js" defer></script>
+    <script src="js/orders.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">FoodieHub</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="cart.html">Cart</a>
+                <a href="orders.html">My Orders</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section container">
+        <div class="section-heading">
+            <h1>My Orders</h1>
+            <p>Review your previous food orders.</p>
+        </div>
+
+        <p id="ordersMessage" class="message" role="status"></p>
+        <div id="ordersList" class="order-list">Loading orders...</div>
+    </main>
+
+    <footer class="footer">© 2026 FoodieHub</footer>
+</body>
+</html>
