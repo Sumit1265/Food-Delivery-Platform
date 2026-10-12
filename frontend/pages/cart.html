@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Cart</title>
+
+    <link rel="stylesheet" href=". ./css/cart.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            FoodExpress
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#menu">Menu</a>
+            <a href="cart.html" class="active">Cart</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Cart Section -->
+    <main class="cart-container">
+
+        <h1>My Cart</h1>
+
+        <div class="cart-content">
+
+            <!-- Cart Items -->
+            <section class="cart-items">
+
+                <div id="cartItems">
+
+                    <!-- Items will be added using JavaScript -->
+
+                </div>
+
+                <!-- Empty Cart -->
+                <div id="emptyCart" class="empty-cart">
+
+                    <h2>Your cart is empty</h2>
+
+                    <p>
+                        You haven't added anything to your cart yet.
+                    </p>
+
+                    <a href="index.html" class="continue-btn">
+                        Browse Menu
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- Order Summary -->
+            <aside class="cart-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">₹0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery Fee</span>
+                    <span id="deliveryFee">₹40</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Tax</span>
+                    <span id="tax">₹0</span>
+                </div>
+
+                <hr>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="total">₹0</span>
+                </div>
+
+                <button id="checkoutBtn" class="checkout-btn">
+                    Proceed to Checkout
+                </button>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/cart.js"></script>
+
+</body>
+</html>
